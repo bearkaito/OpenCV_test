@@ -9,7 +9,7 @@ src2 = np.zeros((height, width, channels), np.uint8)
 cv2. rectangle(src2, (150, 135),(290, 315),(255, 255, 255), thickness=-1)
 
 #and処理
-dst = cv2.bitwise_and(src1, src2)
+dst = cv2.bitwise_or(src1, src2)
 
 cv2.imshow('dst', dst)
 cv2.imshow('src1', src1)
